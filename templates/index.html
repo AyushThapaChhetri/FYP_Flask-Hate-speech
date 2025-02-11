@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hate Speech Detector</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <div class="container-main">
+      <div class="container-one mainSub">
+        <div class="mainSub-H1">
+          <h1>Hate Speech Detector</h1>
+        </div>
+        <div class="mainSub-H4">
+          <h4>Would you classify this as a hate or non-hate?</h4>
+        </div>
+        <form id="predictForm">
+          <div class="mainSub-textarea">
+            {# <textarea id="inputText" placeholder="Enter text here"></textarea> #}
+            <input type="text" id="inputText" class="text" placeholder="Enter Text here" required />
+          </div>
+          <div class="mainSub-button">
+            <button type="submit" id="checkButton">Predict</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container-two mainSub">
+        <div id="result"></div>
+        <table id="resultTable">
+          <thead>
+            <tr>
+              <th>Input Text</th>
+              <th>Prediction</th>
+              <th>Hate Probability</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Built by <span style="color:#74acff"><b>Ayush</b></span> and <span style="color:#74acff"><b>Abiral</b></span>
+      </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
